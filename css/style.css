@@ -1,0 +1,185 @@
+/*********************************************************************************************
+************************************** CSS *************************************************
+*********************************************************************************************/
+
+/*== FONTS ==*/
+
+/*Aleo*/
+@font-face {
+    font-family: 'aleobold';
+    src: url('../fonts/aleo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Open regular */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+        url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Open semibold */
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{ 
+	background: rgb(51,41,88); 
+	background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%); 
+	background: linear-gradient(to bottom, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 ); 
+    height: 100vh;
+    overflow: hidden;
+}
+
+p{
+	margin-bottom:5px;
+}
+
+p , li{
+	color:#332958;
+	font-family: 'open_sansregular';
+}
+
+li{
+	font-size:12px;
+	line-height: 25px;
+	list-style:none;
+}
+
+ul{
+    margin-bottom: 0px;
+}
+
+.list-item{
+    background: #00D6BD;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 30px;
+    vertical-align: middle;
+}
+
+#background-stars{
+	background-image:url(../img/estrellas-fondo.png);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+#title-web{
+	text-align:center;
+}
+
+#background-stars h1{
+	color:#fff;
+	margin:0;
+	font-family:'aleobold';
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-top: 7%;
+	text-align:center;
+}
+
+#background-stars h1:nth-child(2){
+    font-size: 2.2rem;
+	padding-top:0;
+}
+
+#background-stars #container-arriba{
+	background-image:url(../img/contenedor-arriba.png);
+    height: 83px;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 797px;
+    background-size: 100% auto;
+    text-align: center;
+    margin: auto;
+    margin-bottom: -1px;
+}
+
+#background-stars #container-middle{
+	background:#F6F6F6;
+    max-width: 756px;
+    text-align: left;
+    margin: auto;
+    padding: 0px 15px;
+   /* box-shadow: 3px 0px 20px rgba(6, 6, 6, 0.78);*/
+}
+
+
+#background-stars #container-abajo{
+	background-image:url(../img/contenedor-abajo.png);
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 797px;
+    background-size: 100% auto;
+    text-align: center;
+    margin: auto;
+    margin-top: -1px;
+}
+
+#p-1{
+	font-size:14px;
+}
+
+#tipografia{
+	width: 45%;
+    display: inline-block;
+}
+
+#tipografia img{
+	width: 100%;
+    vertical-align: super;
+    padding-left: 15%;
+    padding-top: 0;
+}
+
+#texto{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 3%;
+}
+
+#contacto{
+	padding-top:5%;
+}
+
+#contacto div{
+	display:inline-block;
+}
+
+#contacto div p{
+	display:inline-block;
+	font-family:'open_sanssemibold';
+	font-size:13px;
+}
+
+#contacto div:first-child{
+	margin-right:5%;
+}
