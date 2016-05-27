@@ -87,6 +87,7 @@ ul{
     height: 100vh;
     background-repeat: no-repeat;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -113,29 +114,29 @@ ul{
 	background-image:url(../img/contenedor-arriba.png);
     height: 83px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     max-width: 797px;
     background-size: 100% auto;
     text-align: center;
     margin: auto;
     margin-bottom: -1px;
+    margin-top: -40px;
 }
 
 #background-stars #container-middle{
 	background:#F6F6F6;
-    max-width: 756px;
+    max-width: 754px;
     text-align: left;
     margin: auto;
     padding: 0px 15px;
-   /* box-shadow: 3px 0px 20px rgba(6, 6, 6, 0.78);*/
 }
 
 
 #background-stars #container-abajo{
 	background-image:url(../img/contenedor-abajo.png);
-    height: 60px;
+    height: 40px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     max-width: 797px;
     background-size: 100% auto;
     text-align: center;
@@ -144,7 +145,12 @@ ul{
 }
 
 #p-1{
-	font-size:14px;
+	font-size:13px;
+}
+
+#p-2{
+	font-size:13px;
+	padding-top:3%;
 }
 
 #tipografia{
@@ -163,7 +169,7 @@ ul{
     width: 49%;
     display: inline-block;
     vertical-align: top;
-    padding-left: 3%;
+    padding-left: 5%;
 }
 
 #contacto{
@@ -182,4 +188,13 @@ ul{
 
 #contacto div:first-child{
 	margin-right:5%;
+}
+
+#container-web{
+    margin-top: 40px;
+	-webkit-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 1);
+	-moz-box-shadow:    0px 0px 19px 0px rgba(50, 50, 50, 1);
+	box-shadow:         0px 0px 19px 0px rgba(50, 50, 50, 1);
+    display: inline-block;
+    width: auto;
 }
