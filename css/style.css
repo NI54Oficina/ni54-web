@@ -198,3 +198,79 @@ ul{
     display: inline-block;
     width: auto;
 }
+
+
+@media screen and (max-width: 767px){
+	
+	#background-stars #container-arriba {
+		background-image: url(../img/contenedor-arriba.png);
+		height: 6vh;
+		background-repeat: no-repeat;
+		background-position: left;
+		max-width: 797px;
+		background-size: 100% auto;
+		text-align: center;
+		margin: auto;
+		margin-bottom: -1px;
+		margin-top: -40px;
+	}
+
+	
+	#background-stars #container-abajo {
+		background-image: url(../img/contenedor-abajo.png);
+		height: 2.7vh;
+		background-repeat: no-repeat;
+		background-position: right;
+		max-width: 797px;
+		background-size: 100% auto;
+		text-align: center;
+		margin: auto;
+		margin-top: -1px;
+	}
+
+	#tipografia img {
+		padding-left: 0;
+	}
+	
+	#p-1 {
+		font-size: 10px;
+	}
+	
+	#p-2 {
+		font-size: 10px;
+		padding-top: 2%;
+	}
+	
+	li {
+		font-size: 8.5px;
+	}
+	
+	#contacto {
+		padding-top: 3%;
+	}
+	
+	#contacto div p {
+		font-size: 10px;
+	}
+	
+	.list-item {
+		background: #00D6BD;
+		width: 4px;
+		height: 4px;
+		display: inline-block;
+		margin-right: 5px;
+		border-radius: 30px;
+		vertical-align: middle;
+	}
+	
+	#texto {
+		width: 49%;
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 4%;
+	}
+	
+	#container-web {
+		margin-top: 16%;
+	}
+}
