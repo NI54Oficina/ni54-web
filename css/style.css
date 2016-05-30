@@ -103,11 +103,13 @@ ul{
     font-size: 3rem;
     padding-top: 7%;
 	text-align:center;
+	letter-spacing:2px;
 }
 
 #background-stars h1:nth-child(2){
     font-size: 2.2rem;
 	padding-top:0;
+	letter-spacing:1px;
 }
 
 #background-stars #container-arriba{
@@ -201,6 +203,21 @@ ul{
 
 
 @media screen and (max-width: 767px){
+
+	body{ 
+		background: rgb(51,41,88); 
+		background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%); 
+		background: -webkit-linear-gradient(top, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%); 
+		background: linear-gradient(to bottom, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 ); 
+		height: 105vh;
+		overflow:auto;
+		margin-bottom: 7vh;
+	}
+	
+	#background-stars {
+		background-size: 250%;
+	}
 	
 	#background-stars #container-arriba {
 		background-image: url(../img/contenedor-arriba.png);
@@ -214,7 +231,6 @@ ul{
 		margin-bottom: -1px;
 		margin-top: -40px;
 	}
-
 	
 	#background-stars #container-abajo {
 		background-image: url(../img/contenedor-abajo.png);
@@ -233,16 +249,16 @@ ul{
 	}
 	
 	#p-1 {
-		font-size: 10px;
+		font-size: 14px;
 	}
 	
 	#p-2 {
-		font-size: 10px;
+		font-size: 14px;
 		padding-top: 2%;
 	}
 	
 	li {
-		font-size: 8.5px;
+		font-size: 12px;
 	}
 	
 	#contacto {
@@ -250,7 +266,7 @@ ul{
 	}
 	
 	#contacto div p {
-		font-size: 10px;
+		font-size: 12px;
 	}
 	
 	.list-item {
@@ -264,13 +280,18 @@ ul{
 	}
 	
 	#texto {
-		width: 49%;
-		display: inline-block;
+		width: 100%;
+		display:block;
 		vertical-align: top;
-		padding-left: 4%;
+		padding-left: 1%;
 	}
 	
 	#container-web {
 		margin-top: 16%;
+	}
+	
+	#tipografia {
+		width: 100%;
+		display:block;
 	}
 }
