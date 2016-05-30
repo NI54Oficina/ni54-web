@@ -295,3 +295,22 @@ ul{
 		display:block;
 	}
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px){
+	body {
+		margin-bottom: 33vh;
+	}
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px){
+
+	body {
+		margin-bottom: 13vh;
+	}
+}
+
