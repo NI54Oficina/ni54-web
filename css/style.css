@@ -41,6 +41,10 @@
 	margin:0;
 }
 
+html{
+    background: rgba(114,104,183,1);
+}
+
 body{ 
 	background: rgb(51,41,88); 
 	background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%); 
@@ -56,12 +60,12 @@ p{
 }
 
 p , li{
-	color:#332958;
+	color:#48327A;
 	font-family: 'open_sansregular';
 }
 
 li{
-	font-size:12px;
+	font-size:13px;
 	line-height: 25px;
 	list-style:none;
 }
@@ -131,6 +135,8 @@ ul{
     text-align: left;
     margin: auto;
     padding: 0px 15px;
+    padding-bottom: 7%;
+    padding-top: 2%;
 }
 
 
@@ -152,7 +158,7 @@ ul{
 
 #p-2{
 	font-size:13px;
-	padding-top:3%;
+	padding-top:2%;
 }
 
 #tipografia{
@@ -161,7 +167,7 @@ ul{
 }
 
 #tipografia img{
-	width: 100%;
+    width: 96%;
     vertical-align: super;
     padding-left: 15%;
     padding-top: 0;
@@ -175,7 +181,7 @@ ul{
 }
 
 #contacto{
-	padding-top:5%;
+	padding-top:3.5%;
 }
 
 #contacto div{
@@ -199,6 +205,7 @@ ul{
 	box-shadow:         0px 0px 19px 0px rgba(50, 50, 50, 1);
     display: inline-block;
     width: auto;
+    margin-bottom: 7%;
 }
 
 
@@ -213,6 +220,10 @@ ul{
 		height: 105vh;
 		overflow:auto;
 		margin-bottom: 7vh;
+	}
+	
+	#tipografia img {
+		width: 100%;
 	}
 	
 	#background-stars {
@@ -232,7 +243,7 @@ ul{
 		margin-top: -40px;
 	}
 	
-	#background-stars #container-abajo {
+	#background-stars #container-abajo{
 		background-image: url(../img/contenedor-abajo.png);
 		height: 2.7vh;
 		background-repeat: no-repeat;
@@ -249,16 +260,16 @@ ul{
 	}
 	
 	#p-1 {
-		font-size: 14px;
+		font-size: 13px;
 	}
 	
 	#p-2 {
-		font-size: 14px;
+		font-size: 13px;
 		padding-top: 2%;
 	}
 	
 	li {
-		font-size: 12px;
+		font-size: 13px;
 	}
 	
 	#contacto {
@@ -266,7 +277,7 @@ ul{
 	}
 	
 	#contacto div p {
-		font-size: 12px;
+		font-size: 13px;
 	}
 	
 	.list-item {
@@ -284,15 +295,30 @@ ul{
 		display:block;
 		vertical-align: top;
 		padding-left: 1%;
+		padding-top: 8%;
 	}
-	
-	#container-web {
-		margin-top: 16%;
-	}
-	
+
 	#tipografia {
 		width: 100%;
 		display:block;
+		padding-top: 8%
+	}
+	
+	#background-stars #container-middle {
+		padding: 0px 23px;
+		padding-bottom: 7%;
+	}
+}
+
+@media screen and (max-width: 767px)
+and (orientation : landscape){
+	
+	#background-stars #container-arriba {
+		height: 15vh;
+	}
+	
+	#tipografia img {
+		margin-left: 2vw;
 	}
 }
 
