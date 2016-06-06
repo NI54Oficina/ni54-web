@@ -65,7 +65,7 @@ p , li{
 }
 
 li{
-	font-size:13px;
+	font-size:14px;
 	line-height: 25px;
 	list-style:none;
 }
@@ -121,7 +121,7 @@ ul{
     height: 83px;
     background-repeat: no-repeat;
     background-position: left;
-    max-width: 797px;
+    max-width: 857px;
     background-size: 100% auto;
     text-align: center;
     margin: auto;
@@ -130,13 +130,13 @@ ul{
 }
 
 #background-stars #container-middle{
-	background:#F6F6F6;
-    max-width: 754px;
+    background: #F6F6F6;
+    max-width: 854px;
     text-align: left;
     margin: auto;
     padding: 0px 15px;
-    padding-bottom: 7%;
-    padding-top: 2%;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 
 
@@ -153,13 +153,18 @@ ul{
 }
 
 #p-1{
-	font-size:13px;
+	font-size:15px;
 }
 
 #p-2{
-	font-size:13px;
-	padding-top:2%;
+	font-size:15px;
+	padding-top:3%;
 }
+
+ul{
+    padding-top: 1%;
+}
+
 
 #tipografia{
 	width: 45%;
@@ -181,7 +186,7 @@ ul{
 }
 
 #contacto{
-	padding-top:3.5%;
+	padding-top:5.5%;
 }
 
 #contacto div{
@@ -191,7 +196,7 @@ ul{
 #contacto div p{
 	display:inline-block;
 	font-family:'open_sanssemibold';
-	font-size:13px;
+	font-size:15px;
 }
 
 #contacto div:first-child{
@@ -207,6 +212,7 @@ ul{
     width: auto;
     margin-bottom: 7%;
 }
+
 
 
 @media screen and (max-width: 767px){
@@ -273,7 +279,7 @@ ul{
 	}
 	
 	#contacto {
-		padding-top: 3%;
+		padding-top: 11%;
 	}
 	
 	#contacto div p {
