@@ -45,14 +45,15 @@ html{
     background: rgba(114,104,183,1);
 }
 
-body{ 
-	background: rgb(51,41,88); 
-	background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%); 
-	background: -webkit-linear-gradient(top, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%); 
+body{
+	background: rgb(51,41,88);
+	background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
 	background: linear-gradient(to bottom, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 ); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 );
     height: 100vh;
     overflow: hidden;
+
 }
 
 p{
@@ -92,6 +93,7 @@ ul{
     background-repeat: no-repeat;
     margin: 0;
     text-align: center;
+    padding: 5%;
 }
 
 
@@ -135,8 +137,8 @@ ul{
     text-align: left;
     margin: auto;
     padding: 0px 15px;
-    padding-bottom: 7%;
-    padding-top: 2%;
+    padding-bottom: 6%;
+    padding-top: 6%;
 }
 
 
@@ -169,7 +171,7 @@ ul{
 #tipografia img{
     width: 96%;
     vertical-align: super;
-    padding-left: 15%;
+    padding-left: 10%;
     padding-top: 0;
 }
 
@@ -181,7 +183,7 @@ ul{
 }
 
 #contacto{
-	padding-top:3.5%;
+	padding-top:8%;
 }
 
 #contacto div{
@@ -208,28 +210,32 @@ ul{
     margin-bottom: 7%;
 }
 
+.img-header img{
+  width: 15%;
+}
+
 
 @media screen and (max-width: 767px){
 
-	body{ 
-		background: rgb(51,41,88); 
-		background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%); 
-		background: -webkit-linear-gradient(top, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%); 
+	body{
+		background: rgb(51,41,88);
+		background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%);
+		background: -webkit-linear-gradient(top, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
 		background: linear-gradient(to bottom, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 ); 
-		height: 105vh;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 );
+		height: 100vh;
 		overflow:auto;
 		margin-bottom: 7vh;
 	}
-	
+
 	#tipografia img {
 		width: 100%;
 	}
-	
+
 	#background-stars {
 		background-size: 250%;
 	}
-	
+
 	#background-stars #container-arriba {
 		background-image: url(../img/contenedor-arriba.png);
 		height: 6vh;
@@ -242,7 +248,7 @@ ul{
 		margin-bottom: -1px;
 		margin-top: -40px;
 	}
-	
+
 	#background-stars #container-abajo{
 		background-image: url(../img/contenedor-abajo.png);
 		height: 2.7vh;
@@ -258,28 +264,28 @@ ul{
 	#tipografia img {
 		padding-left: 0;
 	}
-	
+
 	#p-1 {
 		font-size: 13px;
 	}
-	
+
 	#p-2 {
 		font-size: 13px;
 		padding-top: 2%;
 	}
-	
+
 	li {
 		font-size: 13px;
 	}
-	
+
 	#contacto {
 		padding-top: 3%;
 	}
-	
+
 	#contacto div p {
 		font-size: 13px;
 	}
-	
+
 	.list-item {
 		background: #00D6BD;
 		width: 4px;
@@ -289,7 +295,7 @@ ul{
 		border-radius: 30px;
 		vertical-align: middle;
 	}
-	
+
 	#texto {
 		width: 100%;
 		display:block;
@@ -303,27 +309,34 @@ ul{
 		display:block;
 		padding-top: 8%
 	}
-	
+
 	#background-stars #container-middle {
 		padding: 0px 23px;
 		padding-bottom: 7%;
 	}
+
+  .img-header img {
+    width: 50%;
+}
 }
 
 @media screen and (max-width: 767px)
 and (orientation : landscape){
-	
+
 	#background-stars #container-arriba {
 		height: 15vh;
 	}
-	
+
 	#tipografia img {
 		margin-left: 2vw;
 	}
+  .img-header img{
+    width: 25%;
+  }
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 480px){
 	body {
 		margin-bottom: 33vh;
@@ -331,8 +344,8 @@ and (orientation : landscape){
 }
 
 
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 568px){
 
 	body {
@@ -340,3 +353,27 @@ and (orientation : landscape){
 	}
 }
 
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  #texto {
+    width: 100%;
+    margin-top: 5%;
+
+  }
+
+  #tipografia{
+    margin-left: 25%;
+  }
+
+  .img-header img {
+    width: 20%;
+  }
+
+  #p-1,   #p-2, li, #contacto div p{
+  	font-size:17px;
+  }
+
+ }
