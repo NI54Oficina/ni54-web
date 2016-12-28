@@ -1,0 +1,158 @@
+/* IPAD  Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)  {
+
+
+
+/*fin ipad landscape*/
+}
+
+/*MEDIA QUERY PARA IPAD PORTRAIT*/
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+
+
+
+
+/*IPAD portrait*/
+}
+
+
+
+
+
+
+/*IPAD LANDSCAPE & PORTRAIT*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+
+
+
+}
+
+
+/*FIN IPAD LANDSCAPE & PORTRAIT*/
+
+/*media query resoluciones 360x240*/
+
+@media only screen and (max-width: 240px){
+
+
+
+}
+/*FIN MEDIA QUERY 360x240px*/
+
+
+/*media query resoluciones 360x240 portrait*/
+
+@media only screen and (max-width: 370px) and (orientation: portrait)
+{
+
+
+
+}
+
+/*FIN MEDIA QUERY 360x240px portrait*/
+
+
+
+/** SMALL PHONE 240x320 PORTRAIT**/
+@media only screen
+and (min-device-width : 240px)
+and (max-device-width : 320px)
+and (orientation : portrait){
+
+
+}
+
+/** FIN**/
+
+@media only screen
+and (min-device-width : 240px)
+and (max-device-width : 320px)
+and (orientation : landscape){
+
+
+}
+
+
+/** NOKIA LUMIA 320x533 PORTRAIT**/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 533px)
+and (orientation : portrait){
+
+}
+
+/** FIN**/
+
+
+
+/** IPHONE 5 320x568 PORTRAIT**/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait){
+
+
+}
+
+
+
+/** FIN**/
+
+
+
+/** IPHONE 6 375x667 PORTRAIT**/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait){
+
+}
+
+/** IPHONE 6 375x667 LANDSCAPE**/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape){
+
+}
+
+
+/** IPHONE 6  PLUS 414x736 PORTRAIT**/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait){
+
+
+
+}
+
+/** IPHONE 6  PLUS 414x736 LANDSCAPE**/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape){
+
+
+
+}
+
+
+@media only screen
+and (min-device-width: 360px)
+and (max-device-width: 640px)
+and (orientation: landscape)  {
+
+}
+
+/** FIN**/
