@@ -35,6 +35,16 @@
     font-style: normal;
 }
 
+/*Dosis*/
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 *{
 	padding:0;
@@ -42,27 +52,42 @@
 }
 
 html{
-    background: rgba(114,104,183,1);
+    /*background: rgba(114,104,183,1);*/
 }
 
 body{
-	background: rgb(51,41,88);
+	/*background: rgb(51,41,88);
 	background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
 	background: linear-gradient(to bottom, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 );
-    height: 100vh;
-    overflow: hidden;
+  */
+
+  background-image: url('../img/fondo_prueba.jpg');
+  background-size: 100% auto;
+  /*overflow: hidden;*/
+  color: white;
 
 }
+ a, li, input{
+   outline: none;
+ }
+
+ input:focus, textarea:focus, button:focus{
+   outline:none;
+ }
+ section{
+   padding: 0;
+ }
+
 
 p{
 	margin-bottom:5px;
 }
 
 p , li{
-	color:#48327A;
-	font-family: 'open_sansregular';
+	color:white;
+
 }
 
 li{
@@ -85,310 +110,118 @@ ul{
     vertical-align: middle;
 }
 
-#background-stars{
-	background-image:url(../img/estrellas-fondo.png);
-    background-size: 100%;
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    margin: 0;
-    text-align: center;
-    padding: 5%;
+#contacto,#portfolio, #clientes{
+  text-align: center;
+  color: white;
+  padding: 0;
 }
-
 
 #title-web{
 	text-align:center;
+  font-family: 'Dosis';
+  color:white;
 }
 
-#background-stars h1{
-	color:#fff;
-	margin:0;
-	font-family:'aleobold';
-    text-transform: uppercase;
-    font-size: 3rem;
-    padding-top: 7%;
-	text-align:center;
-	letter-spacing:2px;
+#subtitle{
+  color: white;
+  font-family: 'Dosis';
+  font-size: 1.3em;
 }
 
-#background-stars h1:nth-child(2){
-    font-size: 2.2rem;
-	padding-top:0;
-	letter-spacing:1px;
+#pregunta{
+  color: #00d6bd;
+  text-shadow: 2px 2px #7268b7;
+  font-family: 'aleobold';
 }
 
-#background-stars #container-arriba{
-	background-image:url(../img/contenedor-arriba.png);
-    height: 83px;
-    background-repeat: no-repeat;
-    background-position: left;
-    max-width: 857px;
-    background-size: 100% auto;
+#lema{
+  color: white;
+  font-size: .9em;
+  font-family: 'open_sansregular';
+}
+
+#formulario input, #formulario textarea{
+  background-color: transparent;
+  color: #00d6bd;
+  border: none;
+  border-bottom: 1px solid #00d6bd;
+  padding: 5px 0px;
+  width: 400px;
+  font-size: .9em;
+  margin: 10px 0px;
+}
+
+#formulario textarea{
+  border: 1px solid #00d6bd;
+  height: 150px;
+}
+
+#formulario input::-webkit-input-placeholder, #formulario textarea::-webkit-input-placeholder{
+  color: #00d6bd;
+}
+
+#enviar{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 40px;
+}
+.iconos{
+  margin: 0 10px;
+}
+.iconos:first-child{
+  text-align: right;
+}
+
+
+/*PORTFOLIO*/
+
+
+
+#title-section{
+  color: #00d6bd;
+  font-family: 'aleobold';
+}
+
+/*CLIENTES*/
+
+.clientes{
+  background-color: white;
+}
+
+.logo-clientes{
+ padding: 5% 5%;
+ text-align: center;
+}
+
+.nav-dots .nav-dot {
+
+	width: 8px;
+	height: 8px;
+	margin: 0 2px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+}
+
+.dot-nav-slider > ul{
+    padding: 0;
     text-align: center;
-    margin: auto;
-    margin-bottom: -1px;
-    margin-top: -40px;
+}
+.clientes-3{
+  display: none;
 }
 
-#background-stars #container-middle{
-    background: #F6F6F6;
-    max-width: 854px;
-    text-align: left;
-    margin: auto;
-    padding: 0px 15px;
-<<<<<<< HEAD
-    padding-bottom: 10%;
-    padding-top: 5%;
-=======
-    padding-bottom: 6%;
-    padding-top: 6%;
->>>>>>> origin/master
-}
-
-
-#background-stars #container-abajo{
-	background-image:url(../img/contenedor-abajo.png);
-    height: 40px;
-    background-repeat: no-repeat;
-    background-position: right;
-    max-width: 797px;
-    background-size: 100% auto;
-    text-align: center;
-    margin: auto;
-    margin-top: -1px;
-}
-
-#p-1{
-	font-size:15px;
-}
-
-#p-2{
-	font-size:15px;
-	padding-top:3%;
-}
-
-ul{
-    padding-top: 1%;
-}
-
-
-#tipografia{
-	width: 45%;
-    display: inline-block;
-}
-
-#tipografia img{
-    width: 96%;
-    vertical-align: super;
-    padding-left: 10%;
-    padding-top: 0;
-}
-
-#texto{
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 5%;
-}
-
-#contacto{
-<<<<<<< HEAD
-	padding-top:5.5%;
-=======
-	padding-top:8%;
->>>>>>> origin/master
-}
-
-#contacto div{
-	display:inline-block;
-}
-
-#contacto div p{
-	display:inline-block;
-	font-family:'open_sanssemibold';
-	font-size:15px;
-}
-
-#contacto div:first-child{
-	margin-right:5%;
-}
-
-#container-web{
-    margin-top: 40px;
-	-webkit-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 1);
-	-moz-box-shadow:    0px 0px 19px 0px rgba(50, 50, 50, 1);
-	box-shadow:         0px 0px 19px 0px rgba(50, 50, 50, 1);
-    display: inline-block;
-    width: auto;
-    margin-bottom: 7%;
-}
-
-.img-header img{
-  width: 11.5%;
-}
+/*para_probar_portfolio-01.png*/
 
 
 
-@media screen and (max-width: 767px){
-
-	body{
-		background: rgb(51,41,88);
-		background: -moz-linear-gradient(top, rgba(51,41,88,1) 23%, rgba(114,104,183,1) 100%);
-		background: -webkit-linear-gradient(top, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
-		background: linear-gradient(to bottom, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 );
-		height: 100vh;
-		overflow:auto;
-		margin-bottom: 7vh;
-	}
-
-	#tipografia img {
-		width: 100%;
-	}
-
-	#background-stars {
-		background-size: 250%;
-	}
-
-	#background-stars #container-arriba {
-		background-image: url(../img/contenedor-arriba.png);
-		height: 6vh;
-		background-repeat: no-repeat;
-		background-position: left;
-		max-width: 797px;
-		background-size: 100% auto;
-		text-align: center;
-		margin: auto;
-		margin-bottom: -1px;
-		margin-top: -40px;
-	}
-
-	#background-stars #container-abajo{
-		background-image: url(../img/contenedor-abajo.png);
-		height: 2.7vh;
-		background-repeat: no-repeat;
-		background-position: right;
-		max-width: 797px;
-		background-size: 100% auto;
-		text-align: center;
-		margin: auto;
-		margin-top: -1px;
-	}
-
-	#tipografia img {
-		padding-left: 0;
-	}
-
-	#p-1 {
-		font-size: 13px;
-	}
-
-	#p-2 {
-		font-size: 13px;
-		padding-top: 2%;
-	}
-
-	li {
-		font-size: 13px;
-	}
-
-	#contacto {
-		padding-top: 11%;
-	}
-
-	#contacto div p {
-		font-size: 13px;
-	}
-
-	.list-item {
-		background: #00D6BD;
-		width: 4px;
-		height: 4px;
-		display: inline-block;
-		margin-right: 5px;
-		border-radius: 30px;
-		vertical-align: middle;
-	}
-
-	#texto {
-		width: 100%;
-		display:block;
-		vertical-align: top;
-		padding-left: 1%;
-		padding-top: 8%;
-	}
-
-	#tipografia {
-		width: 100%;
-		display:block;
-		padding-top: 8%
-	}
-
-	#background-stars #container-middle {
-		padding: 0px 23px;
-		padding-bottom: 7%;
-	}
-
-  .img-header img {
-    width: 50%;
-}
-}
-
-@media screen and (max-width: 767px)
-and (orientation : landscape){
-
-	#background-stars #container-arriba {
-		height: 15vh;
-	}
-
-	#tipografia img {
-		margin-left: 2vw;
-	}
-  .img-header img{
-    width: 25%;
-  }
-}
-
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px){
-	body {
-		margin-bottom: 33vh;
-	}
-}
 
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px){
-
-	body {
-		margin-bottom: 13vh;
-	}
-}
 
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-  #texto {
-    width: 100%;
-    margin-top: 5%;
 
-  }
-
-  #tipografia{
-    margin-left: 25%;
-  }
-
-  .img-header img {
-    width: 20%;
-  }
-
-  #p-1,   #p-2, li, #contacto div p{
-  	font-size:17px;
-  }
-
- }
+ /******************************************************NUEVA WEB***************************************/
