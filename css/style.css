@@ -215,6 +215,26 @@ ul{
   display: none;
 }
 
+.about h3{
+  color: white;
+  font-family: 'Dosis';
+}
+
+.about h2{
+  color: #00d6bd;
+  font-family: 'aleo';
+}
+
+.about h1{
+  color: #332958;
+  text-shadow: 2px 2px #00d6bd;
+  font-family: 'aleo';
+}
+.about p{
+  color: #180d42;
+  font-family: 'open_sansregular';
+}
+
 /*para_probar_portfolio-01.png*/
 
 
