@@ -32,6 +32,7 @@
 
 	<script type="text/javascript" src="js/js.js "></script>
 		<script type="text/javascript" src="js/stars.js "></script>
+		<script type="text/javascript" src="js/tipeo.js "></script>
 
 
 
@@ -137,7 +138,7 @@
 
 
 <div class="about col-lg-12 col-sm-12 col-md-12 col-xs-12">
-	<h3>NitroInteractivo </h3>
+	<h3 id="dinamic-content">NitroInteractivo </h3>
 
 	<h1>LANZÁ</h1>
 	<h2>Tus ideas con nosotros</h2>
@@ -154,4 +155,18 @@
 
 
 </body>
+
+<script>
+$(document).on("ready",function(){
+  changeContent();
+} );
+function changeContent(){
+ $(function(){
+     $("#dinamic-content").typed({
+       strings: ["NitroInteractivo"],
+       typeSpeed: 100
+     });
+ });
+}
+</script>
 </html>

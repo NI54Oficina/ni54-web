@@ -238,7 +238,9 @@ ul{
   display: none;
 }
 .about{
-padding: 10em 5em;  
+  padding: 10em 5em;
+  background-image: url(../img/fondo-2.png);
+  background-size: cover;
 }
 
 .about h3{
