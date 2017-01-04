@@ -62,13 +62,23 @@ body{
 	background: linear-gradient(to bottom, rgba(51,41,88,1) 23%,rgba(114,104,183,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332958', endColorstr='#7268b7',GradientType=0 );
   */
-
-  background-image: url('../img/fondo_prueba.jpg');
+   background: radial-gradient(circle,  #4c407d 8%,#3c2d63,#3b2b5e,   #312453,    #332554,#02011e 90%);
+  /*background-image: url('../img/fondo_prueba.jpg');*/
   background-size: 100% auto;
   /*overflow: hidden;*/
   color: white;
 
 }
+
+canvas{
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+
  a, li, input{
    outline: none;
  }
@@ -120,6 +130,7 @@ ul{
 	text-align:center;
   font-family: 'Dosis';
   color:white;
+  margin: 1em auto;
 }
 
 #subtitle{
@@ -132,12 +143,17 @@ ul{
   color: #00d6bd;
   text-shadow: 2px 2px #7268b7;
   font-family: 'aleobold';
+  margin: 1em auto;
 }
 
 #lema{
   color: white;
   font-size: .9em;
   font-family: 'open_sansregular';
+  margin: 2em auto;
+}
+#formulario{
+  margin: 2em auto;
 }
 
 #formulario input, #formulario textarea{
@@ -148,12 +164,14 @@ ul{
   padding: 5px 0px;
   width: 400px;
   font-size: .9em;
-  margin: 10px 0px;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
 #formulario textarea{
   border: 1px solid #00d6bd;
   height: 150px;
+  margin-top: 2em;
 }
 
 #formulario input::-webkit-input-placeholder, #formulario textarea::-webkit-input-placeholder{
@@ -165,6 +183,11 @@ ul{
   border: 1px solid white;
   padding: 10px 40px;
 }
+
+.iconos-container{
+  padding:10em 15em;
+}
+
 .iconos{
   margin: 0 10px;
 }
@@ -238,10 +261,86 @@ ul{
 /*para_probar_portfolio-01.png*/
 
 
-
+/*radial-gradient(circle,#4f3f7d,#4c407d, #2c204d,#00001d); */
+/* background: radial-gradient(circle, #4c407d,#3c2d63,#3b2b5e, #312453, #332554,#02011e); */
 
 
 
 
 
  /******************************************************NUEVA WEB***************************************/
+
+ @-webkit-keyframes animateWaves{
+ 	0%{ right: 0px; }
+ 	100%{ right: ~"calc(-3400px + 1600px)"; }
+ }
+
+ @-moz-keyframes animateWaves{
+ 	0%{ right: 0px; }
+ 	100%{ right: ~"calc(-3400px + 1600px)"; }
+ }
+
+ @-o-keyframes animateWaves{
+ 	0%{ right: 0px; }
+ 	100%{ right: ~"calc(-3400px + 1600px)"; }
+ }
+
+ @keyframes animateWaves{
+ 	0%{ right: 0px; }
+ 	100%{ right: ~"calc(-3400px + 1600px)"; }
+ }
+
+ @-webkit-keyframes animateWavesRight{
+ 	0%{ right: 0px; }
+ 	100%{ right: ~"calc(-3400px + 1600px)"; }
+ }
+
+ @-moz-keyframes animateWavesRight{
+ 	0%{ right: 0px; }
+ 	100%{ right: ~"calc(-3400px + 1600px)"; }
+ }
+
+ @-o-keyframes animateWavesRight{
+ 	0%{ right: 0px; }
+ 	100%{ right: ~"calc(-3400px + 1600px)"; }
+ }
+
+ @keyframes animateWavesRight{
+ 	0%{ right: 0px; }
+ 	100%{ right: ~"calc(-3400px + 1600px)"; }
+ }
+
+ /*.pace {
+     position: absolute;
+
+     width: 3400px;
+     height: 20px;
+     right: 0;
+     bottom: 0;
+     background: url(../img/linea_amarilla.svg) repeat-x 100%;
+     -webkit-animation: animateWavesRight 49s infinite linear;
+     animation: animateWavesRight 49s infinite linear;
+ }*/
+
+ /*.pace {
+    top: 50%;
+    left: 50%;
+    width: 208px;
+    position: fixed;
+    height: 15px;
+    z-index: 101;
+    margin-left: -104px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 30px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+}*/
+
+/*.pace{ position:absolute; width:3400px; height:15px; right:0px; bottom:0px; background:url(../img/linea_amarilla.svg) repeat-x center right;
+		-webkit-animation: animateWaves 49s infinite linear;
+		-moz-animation: animateWaves 49s infinite linear;
+		-o-animation: animateWaves 49s infinite linear;
+		animation: animateWaves 49s infinite linear;
+	}*/
