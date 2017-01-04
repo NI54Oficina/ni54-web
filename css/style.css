@@ -237,6 +237,9 @@ ul{
 .clientes-3{
   display: none;
 }
+.about{
+padding: 10em 5em;  
+}
 
 .about h3{
   color: white;
@@ -256,6 +259,9 @@ ul{
 .about p{
   color: #180d42;
   font-family: 'open_sansregular';
+}
+.typed-cursor{
+  display: none
 }
 
 /*para_probar_portfolio-01.png*/
