@@ -138,6 +138,8 @@
 
 
 <div class="about col-lg-12 col-sm-12 col-md-12 col-xs-12">
+
+	<canvas id="canvasSky"></canvas>
 	<h3 id="dinamic-content">NitroInteractivo </h3>
 
 	<h1>LANZÁ</h1>
@@ -168,5 +170,30 @@ function changeContent(){
      });
  });
 }
+</script>
+
+
+<script>
+ height=$('.about').height();
+ width=$('.about').width();
+
+var c = document.getElementById("canvasSky");
+var ctx = c.getContext("2d");
+console.log(height);
+console.log(width);
+var grd = ctx.createRadialGradient(500,height,0, 250, 200, 250);
+
+grd.addColorStop(0, "white");
+grd.addColorStop(.1, "red");
+grd.addColorStop(.2, "blue");
+grd.addColorStop(0.25, "#776db4");
+grd.addColorStop(0.5, "#625897");
+grd.addColorStop(0.75, "#50477f");
+
+grd.addColorStop(1, "white");
+
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0,290, height);
+
 </script>
 </html>

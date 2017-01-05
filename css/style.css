@@ -240,7 +240,9 @@ ul{
 .about{
   padding: 10em 5em;
   /*background-image: url(../img/fondo-2.png);
-  background-size: cover;*/
+  background-size: cover;
+  background-position: center;*/
+  z-index: -2;
 }
 
 .about h3{
@@ -264,6 +266,13 @@ ul{
 }
 .typed-cursor{
   display: none
+}
+
+#canvasSky{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 
 /*para_probar_portfolio-01.png*/

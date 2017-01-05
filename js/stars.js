@@ -58,9 +58,11 @@ var resize = function() {
 
 
 
-	maxNumber = Math.round(window.innerWidth * window.innerHeight * .00012);
+	maxNumber = Math.round(window.innerWidth * window.innerHeight * .00020);
 	createStars();
 };
+
+
 var createStars = function() {
 	stars = [];
 	var w = window.innerWidth * window.devicePixelRatio;
@@ -78,7 +80,12 @@ var createStars = function() {
 			opac:1
 		});
 	}
+
+
 };
+
+
+
 var easeOutCirc = function(t, b, c, d) {
 	t /= d;
 	t--;
