@@ -126,9 +126,9 @@
 	<ul>
 		<li class="nav-dots">
 
-				<label for="vaca-tipo-1" class="nav-dot" ></label>
-				<label for="vaca-tipo-2" class="nav-dot" ></label>
-				<label for="vaca-tipo-3" class="nav-dot" ></label>
+				<label for="1" class="nav-dot" ></label>
+				<label for="2" class="nav-dot" ></label>
+				<label for="3" class="nav-dot" ></label>
 
 		</li>
 </ul>
@@ -140,6 +140,14 @@
 <div class="about col-lg-12 col-sm-12 col-md-12 col-xs-12">
 
 	<canvas id="canvasSky"></canvas>
+	<div class="planetas col-lg-12 col-sm-12 col-md-12 col-xs-12">
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"> <img class="planeta" src="img/planetitas-01.svg" alt=""><p>Contenido <br>Interactivos</p></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"> <img class="planeta" src="img/planetitas-05.svg" alt=""><p>Diseño y <br> comunicación</p></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"> <img class="planeta" src="img/planetitas-04.svg" alt=""><p>Videojuegos y <br>aplicaciones</p></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"> <img class="planeta"  src="img/planetitas-02.svg" alt=""><p>Edutainment<br>Gamification</p></div>
+		<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12"> <img class="planeta"  src="img/planetitas-03.svg" alt=""><p>Websites y <br>mobile apps.</p> </div>
+
+	</div>
 	<h3 id="dinamic-content">NitroInteractivo </h3>
 
 	<h1>LANZÁ</h1>
@@ -174,26 +182,33 @@ function changeContent(){
 
 
 <script>
- height=$('.about').height();
- width=$('.about').width();
+
+ height=150;
+ width=300;
 
 var c = document.getElementById("canvasSky");
 var ctx = c.getContext("2d");
 console.log(height);
 console.log(width);
-var grd = ctx.createRadialGradient(500,height,0, 250, 200, 250);
+var grd = ctx.createRadialGradient(width/2,250,0,width/2, 20, 250);
 
-grd.addColorStop(0, "white");
-grd.addColorStop(.1, "red");
-grd.addColorStop(.2, "blue");
-grd.addColorStop(0.25, "#776db4");
-grd.addColorStop(0.5, "#625897");
-grd.addColorStop(0.75, "#50477f");
 
-grd.addColorStop(1, "white");
+grd.addColorStop(.2, "#d9cfdb");
+grd.addColorStop(0.3, "#776db4");
+grd.addColorStop(0.4, "#625897");
+grd.addColorStop(0.5, "#50477f");
+grd.addColorStop(.6, "#332958");
 
 ctx.fillStyle = grd;
-ctx.fillRect(0, 0,290, height);
+ctx.fillRect(0, 0,300, 150);
+
+
+var imageObj = new Image();
+
+		 imageObj.onload = function() {
+			//  ctx.drawImage(imageObj, 0, 0);
+		 };
+		 imageObj.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/PNG_transparency_demonstration_2.png/300px-PNG_transparency_demonstration_2.png';
 
 </script>
 </html>

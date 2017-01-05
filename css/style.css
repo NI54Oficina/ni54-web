@@ -275,6 +275,26 @@ ul{
   border: none;
 }
 
+@-webkit-keyframes floating{
+ 0%{ margin-top: 4em;}
+ 50%{ margin-top: 3em;}
+ 100%{ margin-top: 4em;}
+}
+
+
+.planeta > div{
+min-height:5em;
+margin-top: 3em;
+
+}
+
+.planeta{
+  position:absolute;;
+
+  margin-top: 4em;
+  animation: floating 2s infinite;
+}
+
 /*para_probar_portfolio-01.png*/
 
 
@@ -286,6 +306,36 @@ ul{
 
 
  /******************************************************NUEVA WEB***************************************/
+
+ @-webkit-keyframes floating{
+   70% {
+     transform:translateY(0%);
+     padding-bottom: 7px;
+ }
+ 80% {
+   transform:translateY(-15%);
+ }
+ 90% {
+   transform:translateY(0%);
+   padding-bottom: 8px;
+ }
+ 95% {
+   transform:translateY(-7%);
+ }
+ 97% {
+   transform:translateY(0%);
+   padding-bottom: 9px;
+ }
+ 99% {
+   transform:translateY(-3%);
+ }
+ 100% {
+   transform:translateY(0);
+   padding-bottom: 9px;
+   opacity: 1;
+ }
+
+ }
 
  @-webkit-keyframes animateWaves{
  	0%{ right: 0px; }

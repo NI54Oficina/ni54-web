@@ -81,6 +81,27 @@ var createStars = function() {
 		});
 	}
 
+// var imageObj = new Image();
+// imageObj="img/humo.svg";
+// 	particle={
+// 		image: imageObj,
+// 		x: 0,
+// 		y: 0,
+// 		radius: .1 + Math.random() * 3.8,
+// 		depth: .1 + Math.random() * 2,
+// 		moveBy: false,
+// 		lifetime: now+2000+(Math.random()*4000),
+// 		opac:1
+// 	}
+//
+// 	  // ctx.drawImage(particle.image, particle.x, particle.y);
+// 	console.log(particle);
+//
+// imageObj.onload = function() {
+// 	ctx.drawImage(imageObj,particle.x, particle.y);
+// };
+//
+// 	stars.push(particle);
 
 };
 
