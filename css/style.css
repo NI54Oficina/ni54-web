@@ -239,8 +239,11 @@ ul{
 }
 .about{
   padding: 10em 5em;
-  /*background-image: url(../img/fondo-2.png);
-  background-size: cover;*/
+  background-image: url(../img/fondo-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -3;
 }
 
 .about h3{
