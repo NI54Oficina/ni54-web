@@ -83,6 +83,43 @@
 
 	<h3 id="title-section">ESTACION PORTFOLIO</h3>
 
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 slider-porfolio">
+
+
+
+
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<img class="col-lg-4 col-md-4 col-sm-4 col-xs-4" src="img/para_probar_portfolio-01.png" class="clip-ellipse" alt="">
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<img class="col-lg-4 col-md-4 col-sm-4 col-xs-4" src="img/para_probar_portfolio-02.png" class="clip-ellipse" alt="">
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<img class="col-lg-4 col-md-4 col-sm-4 col-xs-4" src="img/para_probar_portfolio-01.png" class="clip-ellipse" alt="">
+					</div>
+
+						<!-- <div  id="prueba-cover"style=""></div> -->
+
+		<svg viewbox="0 0 100 50" width="100%" height="100px" style="position:absolute; top:0; left:0",>
+		  <defs>
+		    <mask id="mask" x="0" y="0" width="80" height="30">
+		      <rect x="5" y="5" width="90" height="40" fill="#fff"/>
+		      <circle cx="20" cy="20" r="5" />
+					<circle cx="100" cy="20" r="5" />
+					<circle cx="200" cy="20" r="5" />
+		    </mask>
+		  </defs>
+		  <rect x="0" y="0" width="100" height="50" mask="url(#mask)" fill-opacity="0.7"/>
+		</svg>
+
+		</div>
+
+</section>
+
+<section id="main-lema" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<h1>ALGUNA FRASE QUE DESCRIBA NUESTRA MANERA DE TRABAJAR</h1>
 </section>
 
 <section id="clientes" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
@@ -122,29 +159,49 @@
 		<img class="col-lg-1 col-md-1 col-sm-1 col-xs-1" src="img/para_probar_portfolio-02.png" alt="">
 	</div>
 
-	<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12   dot-nav-slider">
+	<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 dot-nav-slider">
 	<ul>
 		<li class="nav-dots">
 
-				<label for="vaca-tipo-1" class="nav-dot" ></label>
-				<label for="vaca-tipo-2" class="nav-dot" ></label>
-				<label for="vaca-tipo-3" class="nav-dot" ></label>
+				<label for="1" class="nav-dot" ></label>
+				<label for="2" class="nav-dot" ></label>
+				<label for="3" class="nav-dot" ></label>
 
 		</li>
 </ul>
+</div>
+
+<div class="circle-container col-lg-12 col-sm-12 col-md-12 col-xs-12">
+		<div class="circle-lema">
+			<p>Lo que nos <br> gusta hacer</p>
+		</div>
 </div>
 
 </div>
 
 
 <div class="about col-lg-12 col-sm-12 col-md-12 col-xs-12">
-	<h3 id="dinamic-content">NitroInteractivo </h3>
 
-	<h1>LANZÁ</h1>
-	<h2>Tus ideas con nosotros</h2>
+	<canvas id="canvasSky"></canvas>
+	<div class="planetas col-lg-12 col-sm-12 col-md-12 col-xs-12">
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6" hid="1"> <img class="floating" src="img/planetitas-01.svg" alt=""><p>Contenido <br>Interactivos</p></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6" hid="1"> <img class="floating" src="img/planetitas-05.svg" alt=""><p>Diseño y <br> comunicación</p></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6  float-left" hid="1"> <img class="floating"  src="img/planetitas-02.svg" alt=""><p>Edutainment<br>Gamification</p></div>
+		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6  float-right" hid="1"> <img class="floating" src="img/planetitas-04.svg" alt=""><p>Videojuegos y <br>aplicaciones</p></div>
+		<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12" hid="1"> <img class="floating"  src="img/planetitas-03.svg" alt=""><p>Websites y <br>mobile apps.</p> </div>
 
-	<p>Somos un estudio creativo de comunicación. Fotografía, Cinematografía, <br>
-	Diseño Gráfico, Ilustración, 3D, Desarrollo Web y APP.</p>
+	</div>
+
+	<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 about-inner">
+		<h3 id="dinamic-content">NitroInteractivo </h3>
+
+		<h1>LANZÁ</h1>
+		<h2>Tus ideas con nosotros</h2>
+
+		<p>Somos un estudio creativo de comunicación. Fotografía, Cinematografía, <br>
+		Diseño Gráfico, Ilustración, 3D, Desarrollo Web y APP.</p>
+	</div>
+
 </div>
 
 </section>
@@ -168,5 +225,37 @@ function changeContent(){
      });
  });
 }
+</script>
+
+
+<script>
+
+ height=150;
+ width=300;
+
+var c = document.getElementById("canvasSky");
+var ctx = c.getContext("2d");
+console.log(height);
+console.log(width);
+var grd = ctx.createRadialGradient(width/2,250,0,width/2, 20, 250);
+
+
+grd.addColorStop(.2, "#d9cfdb");
+grd.addColorStop(0.3, "#776db4");
+grd.addColorStop(0.4, "#625897");
+grd.addColorStop(0.5, "#50477f");
+grd.addColorStop(.6, "#332958");
+
+ctx.fillStyle = grd;
+ctx.fillRect(0, 0,300, 150);
+
+
+var imageObj = new Image();
+
+		 imageObj.onload = function() {
+			//  ctx.drawImage(imageObj, 0, 0);
+		 };
+		 imageObj.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/PNG_transparency_demonstration_2.png/300px-PNG_transparency_demonstration_2.png';
+
 </script>
 </html>

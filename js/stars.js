@@ -58,9 +58,11 @@ var resize = function() {
 
 
 
-	maxNumber = Math.round(window.innerWidth * window.innerHeight * .00012);
+	maxNumber = Math.round(window.innerWidth * window.innerHeight * .00020);
 	createStars();
 };
+
+
 var createStars = function() {
 	stars = [];
 	var w = window.innerWidth * window.devicePixelRatio;
@@ -78,7 +80,33 @@ var createStars = function() {
 			opac:1
 		});
 	}
+
+// var imageObj = new Image();
+// imageObj="img/humo.svg";
+// 	particle={
+// 		image: imageObj,
+// 		x: 0,
+// 		y: 0,
+// 		radius: .1 + Math.random() * 3.8,
+// 		depth: .1 + Math.random() * 2,
+// 		moveBy: false,
+// 		lifetime: now+2000+(Math.random()*4000),
+// 		opac:1
+// 	}
+//
+// 	  // ctx.drawImage(particle.image, particle.x, particle.y);
+// 	console.log(particle);
+//
+// imageObj.onload = function() {
+// 	ctx.drawImage(imageObj,particle.x, particle.y);
+// };
+//
+// 	stars.push(particle);
+
 };
+
+
+
 var easeOutCirc = function(t, b, c, d) {
 	t /= d;
 	t--;
