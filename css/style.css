@@ -268,18 +268,11 @@ ul{
 }
 .about{
   padding: 10em 5em;
-<<<<<<< HEAD
   background-image: url(../img/fondo-2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -3;
-=======
-  /*background-image: url(../img/fondo-2.png);
-  background-size: cover;
-  background-position: center;*/
-  z-index: -2;
->>>>>>> origin/master
 }
 
 .about-inner h3{
@@ -357,21 +350,64 @@ margin-top: 3em;
 
  /******************************************************NUEVA WEB***************************************/
 
+.wave{
+	width: 200px;
+	height: 50px;
+	background-image: url("../img/linea_amarilla.svg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground .31s linear infinite;
+  margin: 30px auto;
+
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 150% 0; }
+}
+
+
+
  .floating{
     /*float: left;*/
-    -webkit-animation-name: Floatingx;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: Floating;
-    -moz-animation-duration: 3s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
     margin-top: 5px;
     width: 50px;
     height: auto;
-
 }
+
+.floating-time-1{
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+
+.floating-time-2{
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+
+.floating-time-3{
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 4.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 4.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+
 
 .float-right{
   padding-right: 10%;

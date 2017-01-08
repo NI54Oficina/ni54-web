@@ -1,13 +1,17 @@
 $(window).on("load",function () {
-	console.log('LISTO');
-	//$('#container-arriba').css
+
+
 
 });
 
 
 $(document).on("ready",function(){
+
+window.scrollTo(0,document.body.scrollHeight);
+
 	slider();
 	SameHeight();
+
 });
 
 
