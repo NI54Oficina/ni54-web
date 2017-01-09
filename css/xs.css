@@ -1,5 +1,18 @@
 @media screen and (max-width: 767px){
 
+  #formulario input, #formulario textarea{
+    width: 90%;
+  }
+
+  .iconos-container{
+    padding: 0;
+  }
+
+  .about {
+    padding: 10em 0;
+  }
+
+
 }
 
 @media screen and (max-width: 767px) and (orientation:portrait){

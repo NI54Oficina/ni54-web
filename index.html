@@ -42,6 +42,7 @@
 <body>
 
 	<canvas id="canvas"></canvas>
+	<canvas id="canvasFugaz" style="position:absolute; height: 100%; width:100%;"></canvas>
 
 
 <section id="contacto" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
@@ -250,8 +251,6 @@ function changeContent(){
 
 var c = document.getElementById("canvasSky");
 var ctx = c.getContext("2d");
-console.log(height);
-console.log(width);
 var grd = ctx.createRadialGradient(width/2,250,0,width/2, 20, 250);
 
 
@@ -273,4 +272,69 @@ var imageObj = new Image();
 		 imageObj.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/PNG_transparency_demonstration_2.png/300px-PNG_transparency_demonstration_2.png';
 
 </script>
+
+<script>
+
+
+var canvasFugaz = document.getElementById("canvasFugaz");
+var ctxFugaz = canvasFugaz.getContext("2d");
+
+var W = 1500; var H = 1500;
+
+var particles = [];
+for(var i = 0; i < 50; i++)
+{
+particles.push(new create_particle());
+}
+
+function create_particle()
+{
+
+this.x = 0;
+this.y = 0;
+
+
+this.vx = 1;
+this.vy = 1;
+
+this.color = "white";
+
+this.radius =.2;
+}
+
+var x = 100; var y = 100;
+
+function drawFugaz()
+{
+
+ctxFugaz.globalCompositeOperation = "source-over";
+
+ctxFugaz.fillStyle = "rgba(0, 0, 0, 0)";
+ctxFugaz.fillRect(0, 0, W, H);
+
+ctxFugaz.globalCompositeOperation = "lighter";
+
+for(var t = 0; t < particles.length; t++)
+{
+var p = particles[t];
+
+ctxFugaz.beginPath();
+var gradient = ctxFugaz.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius);
+gradient.addColorStop(1, "white");
+
+ctxFugaz.fillStyle = gradient;
+ctxFugaz.arc(p.x, p.y, p.radius, Math.PI*2, false);
+ctxFugaz.fill();
+
+p.x += p.vx;
+p.y += p.vy;
+
+}
+}
+
+setInterval(drawFugaz, 40);
+
+
+</script>
+
 </html>

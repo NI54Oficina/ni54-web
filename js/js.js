@@ -4,6 +4,9 @@ $(window).on("load",function () {
 
 });
 
+$(window).resize(function(){
+		centerCircleLema();
+});
 
 $(document).on("ready",function(){
 
@@ -11,6 +14,7 @@ window.scrollTo(0,document.body.scrollHeight);
 
 	slider();
 	SameHeight();
+	centerCircleLema();
 
 });
 
@@ -47,7 +51,7 @@ function ResetHeight(){
 }
 
 function slider(){
-	console.log("entra slider");
+	// console.log("entra slider");
 
 var currentIndex = 0,
   items = $('.general-container');
@@ -119,6 +123,15 @@ $('.nav-dot').click(function() {
 });
 
 
+}
 
-console.log("sale slider");
+
+function centerCircleLema(){
+	var circle=parseInt($('.circle-lema').width());
+	var doc= parseInt($(window).width());
+
+	var pos = doc/2 - circle/2-30;
+
+	$('.circle-lema').css('margin-left', pos+'px');
+
 }
