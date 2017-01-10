@@ -16,6 +16,7 @@ window.scrollTo(0,document.body.scrollHeight);
 	SameHeight();
 	centerCircleLema();
 
+
 });
 
 
@@ -128,10 +129,16 @@ $('.nav-dot').click(function() {
 
 function centerCircleLema(){
 	var circle=parseInt($('.circle-lema').width());
-	var doc= parseInt($(window).width());
+	var doc= parseInt($(document).width());
 
-	var pos = doc/2 - circle/2-30;
+	var pos = doc/2 - circle/2-60;
 
 	$('.circle-lema').css('margin-left', pos+'px');
+
+}
+
+function centerClientes(){
+	var clientes= parseInt($('.logo-clientes').width());
+	var clientes= parseInt($('.logo-clientes').width());
 
 }

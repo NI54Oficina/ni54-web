@@ -300,6 +300,8 @@ var start = function() {
 	}
 
 
+
+
 	window.ondevicemotion = function(e) {
 		if(mouseDetected){ return;}
 
