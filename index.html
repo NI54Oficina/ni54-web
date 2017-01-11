@@ -31,7 +31,7 @@
 	<script src="js/bootstrap.min.js"></script>
 
 	<script type="text/javascript" src="js/js.js "></script>
-		<script type="text/javascript" src="js/stars.js "></script>
+		<script type="text/javascript" src="js/estrellas.js "></script>
 		<script type="text/javascript" src="js/tipeo.js "></script>
 
 
@@ -40,7 +40,7 @@
 
 
 <body>
-	<canvas id="canvasFugaz" style="height: 100%; width:100%; z-index:-2"></canvas>
+	<canvas id="canvasFugaz" style=" position:absolute;height: 250vh; width:100%; z-index:-2"></canvas>
 
 	<canvas id="canvas"></canvas>
 
@@ -226,32 +226,9 @@
 
 </body>
 
-<script>
-$(document).on("ready",function(){
-  changeContent();
-} );
-function changeContent(){
- $(function(){
-     $("#dinamic-content").typed({
-       strings: ["NitroInteractivo"],
-       typeSpeed: 100
-     });
- });
-}
-</script>
 
 
 <script>
-
-
-// $(document).on("ready",function(){
-//
-// 	startGame();
-//
-// });
-
-
-
 
  height=150;
  width=300;
@@ -280,92 +257,8 @@ var imageObj = new Image();
 
 </script>
 
-<script>
 
-
-
-
-
-var myGamePiece;
-
-anchoWs= $(document).width();
-altoWs = $(document).height();
-
-// $(document).on("ready",function(){
-//
-// startGame();
-//
-// });
-
-function startGame() {
-  myGamePiece = new component(2,80, "white", 255, 255);
-
-
-
-		setTimeout(function(){
-	myGameArea.start();
-
-	  // alert("Boom!");
-	}, 2000);
-
-}
-
-var myGameArea = {
-  canvas : document.getElementById("canvasFugaz"),
-  start : function() {
-      this.canvas.width = anchoWs;
-      this.canvas.height = altoWs;
-      this.context = this.canvas.getContext("2d");
-      document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-      this.frameNo = 0;
-      this.interval = setInterval(updateGameArea, 20);
-  },
-  stop : function() {
-      clearInterval(this.interval);
-  },
-  clear : function() {
-      this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-  }
-}
-
-function component(width, height, color, x, y, type) {
-
-  this.type = type;
-  this.width = width;
-  this.height = height;
-  this.speed = 1;
-  this.angle = 2.5;
-  this.moveAngle = .05;
-  this.x = x;
-  this.y = y;
-  this.update = function() {
-      ctx = myGameArea.context;
-      ctx.save();
-      ctx.translate(this.x, this.y);
-      ctx.rotate(this.angle);
-      ctx.fillStyle = "rgba(255,255,255,.8)";
-      ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);
-      ctx.restore();
-
-  }
-  this.newPos = function() {
-      this.angle += this.moveAngle * Math.PI / 270;
-      this.x += this.speed * Math.sin(this.angle);
-      this.y -= this.speed * Math.cos(this.angle);
-  }
-
-
-}
-
-function updateGameArea() {
-  myGameArea.clear();
-  myGamePiece.newPos();
-  myGamePiece.update();
-  // myGameArea.start();
-  // setTimeout(,500);
-}
-
-</script>
+<script type="text/javascript" src="js/fugaz.js "></script>
 
 
 

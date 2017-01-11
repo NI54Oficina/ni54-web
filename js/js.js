@@ -10,8 +10,9 @@ $(window).resize(function(){
 
 $(document).on("ready",function(){
 
-window.scrollTo(0,document.body.scrollHeight);
+window.scrollTo(30,document.body.scrollHeight);
 
+	tipear();
 	slider();
 	SameHeight();
 	centerCircleLema();
@@ -147,4 +148,13 @@ function scrollToSector(){
 		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 
 	});
+}
+
+function tipear(){
+ $(function(){
+     $("#dinamic-content").typed({
+       strings: ["NitroInteractivo"],
+       typeSpeed: 100
+     });
+ });
 }
