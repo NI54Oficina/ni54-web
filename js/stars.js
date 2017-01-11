@@ -300,8 +300,6 @@ var start = function() {
 	}
 
 
-
-
 	window.ondevicemotion = function(e) {
 		if(mouseDetected){ return;}
 
@@ -324,8 +322,6 @@ var realMouse = mouse;
 window.addEventListener('load', start);
 
 
-
-
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-15955779-2']);
 _gaq.push(['_trackPageview']);
@@ -333,8 +329,7 @@ _gaq.push(['_trackPageview']);
 	var ga = document.createElement('script');
 	ga.type = 'text/javascript';
 	ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
-		'stats.g.doubleclick.net/dc.js';
+	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +	'stats.g.doubleclick.net/dc.js';
 	var s = document.getElementsByTagName('script')[0];
 	s.parentNode.insertBefore(ga, s);
 })();

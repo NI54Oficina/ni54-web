@@ -129,7 +129,7 @@ ul{
   margin: 50px auto;
 }
 
-#contacto,#portfolio, #clientes{
+#contacto,#portfolio, #clientes, #lo-que-hacemos{
   text-align: center;
   color: white;
   padding: 0;
@@ -295,7 +295,7 @@ ul{
   display: none;
 }
 .about{
-  padding: 10em 5em;
+  padding:0;
   background-image: url(../img/fondo-2.png);
   background-size: cover;
   background-position: center;
@@ -331,6 +331,11 @@ ul{
   margin:5% auto;
 }
 
+
+.planetas{
+  padding-top: 10%;
+}
+
 #canvasSky{
   position: absolute;
   height: 100%;
@@ -355,6 +360,7 @@ margin-top: 3em;
 .circle-container{
   height: 100px;
   text-align: center;
+  background-color: white;
 }
 
 .circle-lema{
@@ -386,7 +392,11 @@ margin-top: 3em;
 }
 
 .desplazamiento:hover{
-  color:white;
+  color:#f3b32f;
+}
+
+.desplazamiento:focus{
+  color:#00d6bd;
 }
  /******************************************************NUEVA WEB***************************************/
 
@@ -491,4 +501,9 @@ margin-top: 3em;
         from {-moz-transform: scale(0.9);}
         65% {-moz-transform: scale(1.0);}
         to {-moz-transform: scale(0.9);}
+    }
+
+
+    .seccion{
+      min-height: 100vh;
     }
