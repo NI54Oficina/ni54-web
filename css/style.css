@@ -83,6 +83,10 @@ canvas{
    outline: none;
  }
 
+ a:focus, a:hover {
+    text-decoration:none;
+}
+
  input:focus, textarea:focus, button:focus{
    outline:none;
  }
@@ -372,6 +376,17 @@ margin-top: 3em;
 }
 
 
+.desplazamiento{
+  position:fixed;
+  right:0;
+  color:#00d6bd;
+  padding-right:50px;
+  z-index:3
+}
+
+.desplazamiento:hover{
+  color:white;
+}
  /******************************************************NUEVA WEB***************************************/
 
 .wave{
@@ -476,43 +491,3 @@ margin-top: 3em;
         65% {-moz-transform: scale(1.0);}
         to {-moz-transform: scale(0.9);}
     }
-
- @-webkit-keyframes animateWaves{
- 	0%{ right: 0px; }
- 	100%{ right: ~"calc(-3400px + 1600px)"; }
- }
-
- @-moz-keyframes animateWaves{
- 	0%{ right: 0px; }
- 	100%{ right: ~"calc(-3400px + 1600px)"; }
- }
-
- @-o-keyframes animateWaves{
- 	0%{ right: 0px; }
- 	100%{ right: ~"calc(-3400px + 1600px)"; }
- }
-
- @keyframes animateWaves{
- 	0%{ right: 0px; }
- 	100%{ right: ~"calc(-3400px + 1600px)"; }
- }
-
- @-webkit-keyframes animateWavesRight{
- 	0%{ right: 0px; }
- 	100%{ right: ~"calc(-3400px + 1600px)"; }
- }
-
- @-moz-keyframes animateWavesRight{
- 	0%{ right: 0px; }
- 	100%{ right: ~"calc(-3400px + 1600px)"; }
- }
-
- @-o-keyframes animateWavesRight{
- 	0%{ right: 0px; }
- 	100%{ right: ~"calc(-3400px + 1600px)"; }
- }
-
- @keyframes animateWavesRight{
- 	0%{ right: 0px; }
- 	100%{ right: ~"calc(-3400px + 1600px)"; }
- }

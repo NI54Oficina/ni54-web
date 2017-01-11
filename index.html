@@ -44,6 +44,16 @@
 
 	<canvas id="canvas"></canvas>
 
+	<!-- <a href="" class="glyphicon glyphicon-menu-up desplazamiento" style="top:0;"></a> -->
+
+	<a id="link" name="#contacto" href="" class="glyphicon glyphicon-minus desplazamiento" style="top: 50%"; ></a>
+	<a id="link" name="#portfolio" href="" class="glyphicon glyphicon-minus desplazamiento" style="top: 51%;"></a>
+	<a id="link" name="#clientes" href="" class="glyphicon glyphicon-minus desplazamiento" style="top: 52%;"></a>
+	<a id="link"name="#canvasSky" href="" class="glyphicon glyphicon-minus desplazamiento" style=" top: 53%;"></a>
+
+
+
+	<!-- <a href="" class="glyphicon glyphicon-menu-down desplazamiento" style=""></a> -->
 
 <section id="contacto" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
  	<img id="main-logo" src="img/cohete_blanco.svg" alt="">
@@ -346,6 +356,24 @@ function updateGameArea() {
   // myGameArea.start();
   // setTimeout(,500);
 }
+
+</script>
+
+
+<script>
+
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$("#link").click(function() {
+
+	var toGo=$(this).attr('name');
+
+	console.log("se quiere mover a "+ toGo);
+  //  scrollToAnchor('id3');
+});
 
 </script>
 
