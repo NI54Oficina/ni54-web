@@ -85,6 +85,7 @@ canvas{
 
  a:focus, a:hover {
     text-decoration:none;
+    color: inherit;
 }
 
  input:focus, textarea:focus, button:focus{

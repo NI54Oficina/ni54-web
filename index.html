@@ -46,10 +46,10 @@
 
 	<!-- <a href="" class="glyphicon glyphicon-menu-up desplazamiento" style="top:0;"></a> -->
 
-	<a id="link" name="#contacto" href="" class="glyphicon glyphicon-minus desplazamiento" style="top: 50%"; ></a>
-	<a id="link" name="#portfolio" href="" class="glyphicon glyphicon-minus desplazamiento" style="top: 51%;"></a>
-	<a id="link" name="#clientes" href="" class="glyphicon glyphicon-minus desplazamiento" style="top: 52%;"></a>
-	<a id="link"name="#canvasSky" href="" class="glyphicon glyphicon-minus desplazamiento" style=" top: 53%;"></a>
+	<a id="link" name="#contacto" href="#" class="glyphicon glyphicon-minus desplazamiento" style="top: 50%"; ></a>
+	<a id="link" name="#portfolio" href="#" class="glyphicon glyphicon-minus desplazamiento" style="top: 51%;"></a>
+	<a id="link" name="#clientes" href="#" class="glyphicon glyphicon-minus desplazamiento" style="top: 52%;"></a>
+	<a id="link" name="#canvasSky" href="#" class="glyphicon glyphicon-minus desplazamiento" style=" top: 53%;"></a>
 
 
 
@@ -280,9 +280,6 @@ var myGamePiece;
 anchoWs= $(document).width();
 altoWs = $(document).height();
 
-console.log( anchoWs);
-console.log(altoWs);
-
 // $(document).on("ready",function(){
 //
 // startGame();
@@ -360,21 +357,6 @@ function updateGameArea() {
 </script>
 
 
-<script>
 
-function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-}
-
-$("#link").click(function() {
-
-	var toGo=$(this).attr('name');
-
-	console.log("se quiere mover a "+ toGo);
-  //  scrollToAnchor('id3');
-});
-
-</script>
 
 </html>

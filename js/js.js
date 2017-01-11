@@ -15,7 +15,7 @@ window.scrollTo(0,document.body.scrollHeight);
 	slider();
 	SameHeight();
 	centerCircleLema();
-
+	scrollToSector();
 
 });
 
@@ -137,8 +137,14 @@ function centerCircleLema(){
 
 }
 
-function centerClientes(){
-	var clientes= parseInt($('.logo-clientes').width());
-	var clientes= parseInt($('.logo-clientes').width());
+function scrollToSector(){
+	$(".desplazamiento").click(function() {
 
+		var toGo=$(this).attr('name');
+
+		var aTag = $(toGo);
+
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+
+	});
 }
