@@ -213,7 +213,10 @@ ul{
 
 /*PORTFOLIO*/
 
-
+.dot-nav-slider{
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
 
 #title-section{
   color: #00d6bd;
