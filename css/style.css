@@ -133,6 +133,7 @@ ul{
   text-align: center;
   color: white;
   padding: 0;
+  z-index: 1;
 }
 
 #portfolio{
@@ -430,6 +431,11 @@ margin-top: 3em;
     height: auto;
 }
 
+.planetas p{
+  color:white;
+}
+
+
 .floating-time-1{
   -webkit-animation-name: Floatingx;
   -webkit-animation-duration: 3s;
@@ -465,11 +471,11 @@ margin-top: 3em;
 
 
 .float-right{
-  padding-right: 10%;
+  padding-right: 18%;
 }
 
 .float-left{
-  padding-left: 10%;
+  padding-left: 18%;
 }
 @-webkit-keyframes Floatingx{
     from {-webkit-transform:translate(0, 0px);}

@@ -17,6 +17,7 @@ window.scrollTo(30,document.body.scrollHeight);
 	SameHeight();
 	centerCircleLema();
 	scrollToSector();
+	FitBg();
 
 });
 
@@ -157,4 +158,11 @@ function tipear(){
        typeSpeed: 100
      });
  });
+}
+
+function FitBg(){
+ 	var dd=$(document).height();	console.log($(document).height());
+		console.log($(window).height());
+
+		$('#canvasFugaz').css('height',dd+'px');
 }

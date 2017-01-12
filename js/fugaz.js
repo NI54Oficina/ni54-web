@@ -17,13 +17,18 @@ background.width = background.width = width;
 background.height = background.height = height;
 
 
-var grd = bgCtx.createRadialGradient(width/2,height*2,500,width/2, height, width);
+var grd = bgCtx.createRadialGradient(width/2,height*2,400,width/2, height, width);
 
-//
-grd.addColorStop(.1, "#493f7b");
-grd.addColorStop(.15, "#3a2f64");
-grd.addColorStop(.2, "#3f2e65");
-grd.addColorStop(0.4, "#02011e");
+grd.addColorStop(.0, "#d9cfdb");
+grd.addColorStop(0.01, "#776db4");
+grd.addColorStop(0.02, "#625897");
+grd.addColorStop(0.2, "#50477f");
+grd.addColorStop(.25, "#493f7b");
+
+grd.addColorStop(.3, "#332958");
+grd.addColorStop(.4, "#02011e");
+grd.addColorStop(.5, "#02011e");
+grd.addColorStop(0.6, "#02011e");
 
 bgCtx.fillStyle = grd;
 bgCtx.fillRect(0, 0,300, 150);
