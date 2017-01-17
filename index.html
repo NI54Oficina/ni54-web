@@ -230,37 +230,7 @@
 
 </body>
 
-
-<!--
-<script>
-
- height=150;
- width=300;
-
-var c = document.getElementById("canvasSky");
-var ctx = c.getContext("2d");
-var grd = ctx.createRadialGradient(width/2,250,0,width/2, 20, 250);
-
-
-grd.addColorStop(.2, "#d9cfdb");
-grd.addColorStop(0.3, "#776db4");
-grd.addColorStop(0.4, "#625897");
-grd.addColorStop(0.5, "#50477f");
-grd.addColorStop(.6, "#332958");
-
-ctx.fillStyle = grd;
-ctx.fillRect(0, 0,300, 150);
-
-
-var imageObj = new Image();
-
-		 imageObj.onload = function() {
-			//  ctx.drawImage(imageObj, 0, 0);
-		 };
-		 imageObj.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/PNG_transparency_demonstration_2.png/300px-PNG_transparency_demonstration_2.png';
-
-</script> -->
-
+	<script type="text/javascript" src="js/fugaz.js "></script>
 
 <script type="text/javascript">
 
@@ -277,6 +247,7 @@ function preload() {
 
 		game.physics.startSystem(Phaser.Physics.ARCADE);
 		game.load.image('nave', 'img/cohete.svg', 300, 300);
+		game.load.image('logo', 'img/cohete_blanco.svg', 300, 300);
 
 }
 
@@ -294,13 +265,15 @@ function create() {
 	nave.pivot.x=nave.width/2;
 	nave.pivot.y=nave.height/2;
 
+	logo=game.add.sprite(width/2-45, 50, 'logo');
+	logo.alpha=0;
 
 	self=this;
 
 
 
 
-	nave.angle-=0;
+	nave.angle=0;
 
 	game.input.mouse.mouseWheelCallback = mouseWheel;
 
@@ -346,23 +319,34 @@ function create() {
 
 		if(posY<500){
 
-			if(posX==100){
-				tweenNaveToTop =game.add.tween(nave).to( {angle:45},400, "Linear");
+			if(posX!=100){
+				tweenNaveToTop =game.add.tween(nave).to( {angle:45},1000, "Linear");
 			}else{
-				tweenNaveToTop =game.add.tween(nave).to( {angle:-45},400, "Linear");
+				tweenNaveToTop =game.add.tween(nave).to( {angle:45},1000, "Linear");
+				console.log("entra");
 			}
 
 
 			tweenNaveToTop.start();
 
-			tweenNave =  game.add.tween(nave).to( {x:width/2, y:100},500, "Linear");
-			tweenNaveAlpha=game.add.tween(nave).to( {alpha:0},500, "Linear");
+			tweenNave =  game.add.tween(nave).to( {x:width/2, y:100},1000, "Linear");
+			tweenNaveAlpha=game.add.tween(nave).to( {alpha:0},1000, "Linear");
 			tweenNave.start();
 			tweenNaveAlpha.start();
 
+			tweenNave.onComplete.addOnce(function(){
+						tweenLogo =  game.add.tween(logo).to( {alpha:1},1000, "Linear");
+						tweenLogo.start();
+			});
+
+
 		}else{
-			tweenNave =  game.add.tween(nave).to(  {y:posY, x:posX},500, "Linear");
-			tweenNaveAlpha=game.add.tween(nave).to( {alpha:1},500, "Linear");
+
+			tweenLogo =  game.add.tween(logo).to( {alpha:0},1000, "Linear");
+			tweenLogo.start();
+
+			tweenNave =  game.add.tween(nave).to(  {y:posY, x:posX},1000, "Linear");
+			tweenNaveAlpha=game.add.tween(nave).to( {alpha:1},1000, "Linear");
 
 
 			console.log(game.input.mouse.wheelDelta);
@@ -376,25 +360,10 @@ function create() {
 
 		if(randomX==1){
 
-
-			// if(posX=100){
-			// 	tweenPosX =  game.add.tween(nave).to({angle:0},500, "Linear");
-			// }else {
-			// 	tweenPosX =  game.add.tween(nave).to({angle:-45},500, "Linear");
-			// }
-			//
-			// tweenPosX.start();
 			posX=100;
 
 		}else{
 
-			// if(posX=width-200){
-			// 	tweenPosX =  game.add.tween(nave).to({angle:0},500, "Linear");
-			// }else {
-			// 	tweenPosX =  game.add.tween(nave).to({angle:45},500, "Linear");
-			// }
-			//
-			// tweenPosX.start();
 			posX=width-200;
 		}
 

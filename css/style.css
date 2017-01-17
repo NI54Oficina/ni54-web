@@ -127,6 +127,7 @@ ul{
 
 #main-logo{
   margin: 50px auto;
+  visibility: hidden;
 }
 
 #contacto,#portfolio, #clientes, #lo-que-hacemos{
