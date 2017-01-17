@@ -138,7 +138,19 @@ ul{
 }
 
 #clientes{
-  z-index: 4;
+  z-index: 3;
+  background-color: white;
+}
+
+
+#fraseFlotante{
+  color:#db5a5b;
+  font-size:1.5em;
+  text-align:center;
+  font-family:'Dosis';
+  position: absolute;
+  top: 0;
+  margin-top:0;
 }
 
 #portfolio{
@@ -362,14 +374,9 @@ ul{
   position: absolute;
   top:0;
   left:0;
-  z-index: 3;
+  z-index: 2;
 }
 
-@-webkit-keyframes floating{
- 0%{ margin-top: 4em;}
- 50%{ margin-top: 3em;}
- 100%{ margin-top: 4em;}
-}
 
 
 .planeta > div{
@@ -409,7 +416,7 @@ margin-top: 3em;
   right:0;
   color:#00d6bd;
   padding-right:50px;
-  z-index:3
+  z-index:4;
 }
 
 .desplazamiento:hover{
@@ -430,11 +437,6 @@ margin-top: 3em;
 	animation: animatedBackground .31s linear infinite;
   margin: 30px auto;
 
-}
-
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 150% 0; }
 }
 
 
@@ -492,17 +494,6 @@ margin-top: 3em;
 .float-left{
   padding-left: 18%;
 }
-@-webkit-keyframes Floatingx{
-    from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0, 15px);}
-    to {-webkit-transform: translate(0, -0px);    }
-}
-
-@-moz-keyframes Floating{
-    from {-moz-transform:translate(0, 0px);}
-    65% {-moz-transform:translate(0, 15px);}
-    to {-moz-transform: translate(0, -0px);}
-}
 
 
 .scaling{
@@ -517,19 +508,62 @@ margin-top: 3em;
     -moz-animation-timing-function:ease-in-out;
 }
 
-    @-webkit-keyframes scalex{
-        from {-webkit-transform: scale(0.9);}
-        65% {-webkit-transform: scale(1.0);}
-        to {-webkit-transform: scale(0.9);}
-    }
-
-    @-moz-keyframes scale{
-        from {-moz-transform: scale(0.9);}
-        65% {-moz-transform: scale(1.0);}
-        to {-moz-transform: scale(0.9);}
-    }
 
 
     .seccion{
       min-height: 100vh;
     }
+
+
+
+  /*ANIMATION*/
+
+
+  @-webkit-keyframes scalex{
+      from {-webkit-transform: scale(0.9);}
+      65% {-webkit-transform: scale(1.0);}
+      to {-webkit-transform: scale(0.9);}
+  }
+
+  @-moz-keyframes scale{
+      from {-moz-transform: scale(0.9);}
+      65% {-moz-transform: scale(1.0);}
+      to {-moz-transform: scale(0.9);}
+  }
+
+  @-webkit-keyframes Floatingx{
+      from {-webkit-transform:translate(0, 0px);}
+      65% {-webkit-transform:translate(0, 15px);}
+      to {-webkit-transform: translate(0, -0px);    }
+  }
+
+  @-moz-keyframes Floating{
+      from {-moz-transform:translate(0, 0px);}
+      65% {-moz-transform:translate(0, 15px);}
+      to {-moz-transform: translate(0, -0px);}
+  }
+
+
+  @keyframes animatedBackground {
+  	from { background-position: 0 0; }
+  	to { background-position: 150% 0; }
+  }
+
+
+  @-webkit-keyframes floating{
+   0%{ margin-top: 4em;}
+   50%{ margin-top: 3em;}
+   100%{ margin-top: 4em;}
+  }
+
+
+  @keyframes animate-frase-flotante{
+    0%{ margin-top: 0px;}
+    100%{  margin-top: -50px;}
+  }
+
+
+.animate-frase-flotante{
+  animation-name: animate-frase-flotante;
+  animation-duration: 2s;
+}
