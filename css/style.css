@@ -137,6 +137,10 @@ ul{
   z-index: 1;
 }
 
+#clientes{
+  z-index: 4;
+}
+
 #portfolio{
 
   margin-bottom: 2em;
