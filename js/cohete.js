@@ -81,36 +81,36 @@ function create() {
 			i=0;
 		}
 
-		if(posY<500){
+		if(posY<1000){
 
 			if(posX!=100){
-				tweenNaveToTop =game.add.tween(nave).to( {angle:45},1000, "Linear");
+				tweenNaveToTop =game.add.tween(nave).to( {angle:45},500, "Linear");
 			}else{
-				tweenNaveToTop =game.add.tween(nave).to( {angle:45},1000, "Linear");
+				tweenNaveToTop =game.add.tween(nave).to( {angle:45},500, "Linear");
 				console.log("entra");
 			}
 
 
 			tweenNaveToTop.start();
 
-			tweenNave =  game.add.tween(nave).to( {x:width/2, y:100},1000, "Linear");
-			tweenNaveAlpha=game.add.tween(nave).to( {alpha:0},1000, "Linear");
+			tweenNave =  game.add.tween(nave).to( {x:width/2, y:100},500, "Linear");
+			tweenNaveAlpha=game.add.tween(nave).to( {alpha:0},500, "Linear");
 			tweenNave.start();
 			tweenNaveAlpha.start();
 
 			tweenNave.onComplete.addOnce(function(){
-						tweenLogo =  game.add.tween(logo).to( {alpha:1},1000, "Linear");
+						tweenLogo =  game.add.tween(logo).to( {alpha:1},500, "Linear");
 						tweenLogo.start();
 			});
 
 
 		}else{
 
-			tweenLogo =  game.add.tween(logo).to( {alpha:0},1000, "Linear");
+			tweenLogo =  game.add.tween(logo).to( {alpha:0},500, "Linear");
 			tweenLogo.start();
 
-			tweenNave =  game.add.tween(nave).to(  {y:posY, x:posX},1000, "Linear");
-			tweenNaveAlpha=game.add.tween(nave).to( {alpha:1},1000, "Linear");
+			tweenNave =  game.add.tween(nave).to(  {y:posY, x:posX},500, "Linear");
+			tweenNaveAlpha=game.add.tween(nave).to( {alpha:1},500, "Linear");
 
 
 			console.log(game.input.mouse.wheelDelta);

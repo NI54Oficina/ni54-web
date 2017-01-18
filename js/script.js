@@ -22,6 +22,15 @@ window.scrollTo(30,document.body.scrollHeight);
 });
 
 
+
+$(window).scroll(function(){
+    checkAnimationOne();
+
+
+});
+
+
+
 function SameHeight(){
   //console.log("entra same height");
 
@@ -161,6 +170,7 @@ function tipear(){
 }
 
 function FitBg(){
+	
  	var dd=$(document).height();	console.log($(document).height());
 		console.log($(window).height());
 
@@ -168,42 +178,31 @@ function FitBg(){
 }
 
 
-// Returns true if the specified element has been scrolled into the viewport.
 function isElementInViewport(elem) {
     var $elem = $(elem);
 
-    // Get the scroll position of the page.
+		console.log($elem);
+
     var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
     var viewportTop = $(scrollElem).scrollTop();
     var viewportBottom = viewportTop + $(window).height();
 
-    // Get the position of the element on the page.
     var elemTop = Math.round( $elem.offset().top );
     var elemBottom = elemTop + $elem.height();
 
     return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
 }
 
-// Check if it's time to start the animation.
 
 function checkAnimationOne() {
 
-    var $elem = $('#fraseFlotante');
 
-    // If the animation has already been started
+    var $elem = $('#fraseFlotante');
 
     if ($elem.hasClass('animate-frase-flotante')) return;
 
     if (isElementInViewport($elem)) {
 
-        // Start the animation
-
         $elem.addClass('animate-frase-flotante');
     }
 }
-
-// Capture scroll events
-
-$(window).scroll(function(){
-    checkAnimationOne();
-});

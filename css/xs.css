@@ -12,6 +12,29 @@
     /*padding: 10em 0;*/
   }
 
+  #canvasNave.canvasNave{
+    display: none;
+  }
+
+
+  .about-inner p, .about p {
+    color: white;
+  }
+
+  #main-logo {
+    visibility: visible;
+  }
+
+  #canvas{
+    display:none;
+  }
+
+
+  .desplazamiento {
+
+      padding-right: 20px;
+
+  }
 
 }
 

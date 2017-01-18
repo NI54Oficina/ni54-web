@@ -52,7 +52,8 @@
 }
 
 html{
-    /*background: rgba(114,104,183,1);*/
+  background: radial-gradient(circle,  #4c407d 8%,#3c2d63,#3b2b5e,   #312453,    #332554,#02011e 90%);
+
 }
 
 body{
@@ -126,7 +127,7 @@ ul{
 }
 
 #main-logo{
-  margin: 50px auto;
+  margin: 2em auto;
   visibility: hidden;
 }
 
@@ -137,20 +138,25 @@ ul{
   z-index: 1;
 }
 
+#clientes,#contacto, .circle-container{
+    z-index: 3;
+}
+
 #clientes{
-  z-index: 3;
   background-color: white;
 }
 
 
 #fraseFlotante{
   color:#db5a5b;
-  font-size:1.5em;
+  font-size:1.8em;
   text-align:center;
   font-family:'Dosis';
   position: absolute;
   top: 0;
-  margin-top:0;
+  margin-top:-200px;
+  right: 0;
+  left: 0;
 }
 
 #portfolio{
@@ -162,7 +168,7 @@ ul{
 	text-align:center;
   font-family: 'Dosis';
   color:white;
-  margin: 1em auto;
+  margin: .5em auto;
 }
 
 #subtitle{
@@ -217,7 +223,7 @@ ul{
 }
 
 .iconos-container{
-  padding:10em 15em;
+  padding:3em 15em;
 }
 
 .iconos{
@@ -352,9 +358,15 @@ ul{
 .about-inner{
   margin:5% auto;
   margin-bottom: 0;
-  background-image: url("../img/suelo.png");
+
+}
+
+#img-suelo{
+  /*background-image: url("../img/suelo.png");
  background-position: bottom;
- background-repeat: no-repeat;
+ background-repeat: no-repeat;*/
+ position: absolute;
+ bottom: 0;
 }
 
 
@@ -559,11 +571,11 @@ margin-top: 3em;
 
   @keyframes animate-frase-flotante{
     0%{ margin-top: 0px;}
-    100%{  margin-top: -50px;}
+    100%{  margin-top: -200px;}
   }
 
 
 .animate-frase-flotante{
   animation-name: animate-frase-flotante;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
