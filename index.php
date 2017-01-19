@@ -240,7 +240,11 @@
 
 <script type="text/javascript">
 
+$(window).scroll(function(){
+    checkAnimationOne();
 
+
+});
 
 
 
