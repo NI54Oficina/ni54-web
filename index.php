@@ -134,27 +134,44 @@
 	<h1 id="fraseFlotante" class="" style="">ALGUNA FRASE QUE DESCRIBA NUESTRA MANERA DE TRABAJAR</h1>
 
 
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 partners clientes" >
+		<h3 id="title-section">PARTNERS</h3>
+
+		<div class="logo-clientes">
+			<img class="col-lg-1 col-md-2 col-sm-3 col-xs-3 col-lg-offset-5 col-md-offset-3" src="img/cac.png" alt="">
+			<img class="col-lg-1 col-md-2 col-sm-3 col-xs-3" src="img/uba.png" alt="">
+			<img class="col-lg-1 col-md-2 col-sm-3 col-xs-3" src="img/abuelas.png" alt="">
+
+		</div>
+
+
+	</div>
+
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separador">
+		<div class="separador-inner"></div>
+	</div>
+
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clientes" >
-	<h3 id="title-section">NUESTROS CLIENTES</h3>
+	<h3 id="title-section">YA NOS CONOCEN</h3>
 
 	<div class="logo-clientes general-container">
-		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3 col-lg-offset-3 col-md-offset-3" src="img/zuko.png" alt="">
-		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/abuelas.png" alt="">
-		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/barrick.png" alt="">
+		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3 col-lg-offset-4 col-md-offset-4" src="img/barrick.png" alt="">
 		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/bb.png" alt="">
 		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/biomarin.png" alt="">
 		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/bocafan.png" alt="">
+		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/easy.png" alt="">
+
 		<!-- <img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/cac.png" alt="">
 		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/easy.png" alt=""> -->
 	</div>
 
+
 	<div class="logo-clientes clientes-3 general-container">
-		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3 col-lg-offset-4 col-md-offset-4" src="img/cac.png" alt="">
-		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/tang.png" alt="">
+		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3 col-lg-offset-4 col-md-offset-4" src="img/tang.png" alt="">
 		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/visa.png" alt="">
 		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/ymad.png" alt="">
-		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/easy.png" alt="">
-
+		<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/zuko.png" alt="">
+				<img class="col-lg-1 col-md-1 col-sm-3 col-xs-3" src="img/mattel.png" alt="">
 	</div>
 
 	<!-- <div class="logo-clientes clientes-3 general-container">

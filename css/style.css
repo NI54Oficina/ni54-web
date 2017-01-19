@@ -581,6 +581,20 @@ margin-top: 3em;
 }
 
 
+.separador-inner{
+  position: absolute;
+  height: 1px;
+  left: 0px;
+  right: 0px;
+  width: 80%;
+  background-color: #7268b7;
+  margin: auto;
+}
+
+.separador{
+  margin: 20px auto;
+}
+
 /*PROJECT.PHP*/
 
 #descripcion{
