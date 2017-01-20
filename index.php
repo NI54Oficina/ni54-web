@@ -257,6 +257,12 @@
 
 <script type="text/javascript">
 
+$(document).on("ready",function(){
+
+window.scrollTo(30,document.body.scrollHeight);
+
+})
+
 $(window).scroll(function(){
     checkAnimationOne();
 

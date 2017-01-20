@@ -10,7 +10,6 @@ $(window).resize(function(){
 
 $(document).on("ready",function(){
 
-window.scrollTo(30,document.body.scrollHeight);
 
 	tipear();
 	slider();

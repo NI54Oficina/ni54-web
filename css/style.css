@@ -268,18 +268,9 @@ ul{
 
   }
 
-.slider-porfolio{
-  background: white;
-}
-
-.slider-porfolio {
-  min-height: 200px;
-}
 
 .img-to-slide{
-  position: absolute;
-  margin-top: -50%;
-  left: 0;
+
   padding:20%;
   /*width: 70%;*/
 
